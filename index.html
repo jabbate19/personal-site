@@ -8,23 +8,24 @@
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
     <title>Joe Abbate</title>
+    <link rel="icon" href="https://profiles.csh.rit.edu/image/skyz">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="container">
-      <header class="blog-header py-3">
+      <header class="py-1">
         <div class="row flex-nowrap justify-content-center align-items-center">
           <div class="col-4 text-center">
-            <a class="blog-header-logo text-dark" href="#">Joe Abbate</a>
+            <a class="text-dark" href="/" style="font-family:techovier-bold;font-size:200%">Joe Abbate</a>
           </div>
         </div>
       </header>
-
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <!--<a class="navbar-brand" href="#">Joseph Abbate</a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,19 +34,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto navbar-center">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Me</a>
+              <a class="nav-link" href="/about">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="/projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Resume</a>
+              <a class="nav-link" href="https://csh.rit.edu/~skyz/AbbateResume.pdf" target="_blank">Resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Me</a>
+              <a class="nav-link" href="/contact">Contact Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://github.com/jabbate19" target="_blank"><i class="bi bi-github"></i></a>
@@ -58,13 +59,13 @@
       </nav>
     
       <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
-        <div class="row">
+        <div class="row justify-content-between">
           <div class="col-md-6">
-            <h1 class="display-4 font-italic">Joe Abbate</h1>
-            <p class="lead my-3">Welcome! I am a 1st Year Computing Security student from Long Island, NY. I am enrolled in the BS/MS Program and plan to graduate in 2025.</p>
+            <h1 class="display-4">Joe Abbate</h1>
+            <p class="lead my-3">Welcome! I am a 1st Year Computing Security student at the Rochester Institute of Technology. I am enrolled in the BS/MS Program and plan to graduate in 2025.</p>
           </div>
           <div class="col-md-6">
-            <img src="https://profiles.csh.rit.edu/image/skyz" class="rounded-circle">
+            <div class="float-right"><img src="https://profiles.csh.rit.edu/image/skyz" class="rounded-circle"></div>
           </div>
         </div>
       </div>
@@ -86,48 +87,67 @@
           <div class="card flex-md-row mb-4 box-shadow h-md-250">
             <div class="card-body d-flex flex-column align-items-start">
               <h3 class="mb-0">
-                <a class="text-dark" href="/resume">Resume</a>
+                <a class="text-dark" href="https://csh.rit.edu/~skyz/AbbateResume.pdf" target="_blank">Resume</a>
               </h3>
               <p class="card-text mb-auto">Trying to learn about me all on one page? See here!</p>
-              <a href="/resume">View Resume</a>
+              <a href="https://csh.rit.edu/~skyz/AbbateResume.pdf" target="_blank">View Resume</a>
             </div>
             <img class="card-img-right flex-auto d-none d-md-block" data-src="resume.png" alt="Thumbnail [200x250]" src="resume.png" data-holder-rendered="true" style="width: 200px; height: 250px;">
           </div>
         </div>
       </div>
+    
+
+      <main role="main" class="container">
+        <div class="row">
+          <div class="col-md-8 blog-main">
+            <h3 class="pb-3 mb-4 font-italic border-bottom">
+              Latest Posts
+            </h3>
+
+            <div>
+              <h2>
+                <a class="text-dark" href="/projects#rustyblue">
+                  RustyBlue
+                </a>
+                <a class="text-dark" href="https://github.com/jabbate19/RustyBlue">
+                  <i class="bi bi-github"></i>
+                </a>
+              </h2>
+              <p>April 12, 2022</p>
+            </div><!-- /.blog-post -->
+
+            <div>
+              <h2>
+                <a class="text-dark" href="/projects#light">
+                  Light
+                </a>
+                <a class="text-dark" href="https://github.com/jabbate19/Light">
+                  <i class="bi bi-github"></i>
+                </a>
+              </h2>
+              <p class="blog-post-meta">January 19, 2022</p>
+            </div><!-- /.blog-post -->
+
+            <div>
+              <h2>New Job as a Teaching Assistant!</h2>
+              <p>January 10, 2022</p>
+            </div><!-- /.blog-post -->
+
+          </div><!-- /.blog-main -->
+
+        </div><!-- /.row -->
+
+      </main><!-- /.container -->
+
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#">Joe Abbate</a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jabbate19/personal-site">Source Code<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-    <main role="main" class="container">
-      <div class="row">
-        <div class="col-md-8 blog-main">
-          <h3 class="pb-3 mb-4 font-italic border-bottom">
-            Latest Posts
-          </h3>
-
-          <div class="blog-post">
-            <h2 class="blog-post-title">RustyBlue</h2>
-            <p class="blog-post-meta">January 1, 2022</p>
-          </div><!-- /.blog-post -->
-
-          <div class="blog-post">
-            <h2 class="blog-post-title">New Job as a Teaching Assistant!</h2>
-            <p class="blog-post-meta">January 1, 2022</p>
-          </div><!-- /.blog-post -->
-
-          <div class="blog-post">
-            <h2 class="blog-post-title">Light</h2>
-            <p class="blog-post-meta">January 1, 2022</p>
-          </div><!-- /.blog-post -->
-
-        </div><!-- /.blog-main -->
-
-      </div><!-- /.row -->
-
-    </main><!-- /.container -->
-
-    <footer class="blog-footer">
-
-    </footer>
-
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="250" viewBox="0 0 200 250" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="13" style="font-weight:bold;font-size:13pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg></body></html>
 </html>
