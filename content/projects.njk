@@ -1,0 +1,13 @@
+---
+layout: layout.njk
+---
+<br>
+
+{% set projects = collections.projectsSorted %}
+
+{% for project in projects %}
+  {% include "project.njk" %}
+{% endfor %}
+
+
+   

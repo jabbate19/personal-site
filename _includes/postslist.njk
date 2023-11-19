@@ -1,0 +1,15 @@
+<div class="col-xl-12">
+{% for post in postslist | reverse %}
+<div class="row-xl-12">
+	<div class="card flex-xl-row xl-12 box-shadow h-xl-250">
+		<div class="card-body d-flex flex-column align-items-start">
+		<h3 class="xl-12">
+			<a class="text-dark" href="{{ post.url }}">{{ post.data.title }}</a>
+		</h3>
+		<p>{{post.date | readableDate("LLLL d, yyyy")}}</p>
+		</div>
+	</div>
+</div>
+<br>
+{% endfor %}
+</div>

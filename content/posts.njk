@@ -1,0 +1,19 @@
+---
+layout: layout.njk
+---
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-xl-12 blog-main">
+      <h3 class="pb-3 mb-4 font-italic border-bottom">
+        All Posts
+      </h3>
+      <p>Note: This is no longer in use. Check out my LinkedIn <a href="https://linkedin.com/in/jabbate19">here!</a></p>
+      {% set postslist = collections.posts %}
+      {% set postslistCounter = postsCount %}
+      {% include "postslist.njk" %}
+
+    </div><!-- /.blog-main -->
+
+  </div><!-- /.row -->
+
+</main><!-- /.container -->

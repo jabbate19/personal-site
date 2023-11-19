@@ -1,0 +1,73 @@
+---
+layout: layout.njk
+---
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+  <div class="row justify-content-between">
+    <div class="col-md-6">
+      <h1 class="display-4">Joe Abbate</h1>
+      <p class="lead my-3">Welcome! I am a 3rd/4th Year Computing Security student at the Rochester Institute of
+        Technology.</p>
+    </div>
+    <div class="col-md-6">
+      <div class="float-right"><img src="/assets/img/suit.png" class="rounded-circle" style="width:100%;height:auto;"></div>
+    </div>
+  </div>
+</div>
+
+<div class="row mb-2">
+  <div class="col-md-6">
+    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+      <div class="card-body d-flex flex-column align-items-start">
+        <h3 class="mb-0">
+          <a class="text-dark" href="/projects">My Projects</a>
+        </h3>
+        <p class="card-text mb-auto">I like to see what I can come up with on my free time. Some of it will work,
+          others will be pure chaos. Regardless, I learn a lot from them and record them here!</p>
+        <a href="/projects">Learn More</a>
+      </div>
+      <img class="card-img-right flex-auto d-none d-md-block" data-src="/assets/img/rusty.png" alt="Thumbnail [200x250]"
+        src="/assets/img/rusty.png" data-holder-rendered="true" style="width: 200px; height: 250px;">
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+      <div class="card-body d-flex flex-column align-items-start">
+        <h3 class="mb-0">
+          <a class="text-dark" href="https://csh.rit.edu/~skyz/AbbateResume.pdf" target="_blank">Resume</a>
+        </h3>
+        <p class="card-text mb-auto">Trying to learn about me all on one page? See here!</p>
+        <a href="https://csh.rit.edu/~skyz/AbbateResume.pdf" target="_blank">View Resume</a>
+      </div>
+      <img class="card-img-right flex-auto d-none d-md-block" data-src="/assets/img/resume.png" alt="Thumbnail [200x250]"
+        src="/assets/img/resume.png" data-holder-rendered="true" style="width: 200px; height: 250px;">
+    </div>
+  </div>
+</div>
+
+
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-xl-12 blog-main">
+      <h3 class="pb-3 mb-4 font-italic border-bottom">
+        LinkedIn Posts
+      </h3>
+      <div class='sk-ww-linkedin-profile-post' data-embed-id='228596'></div><script src='https://widgets.sociablekit.com/linkedin-profile-posts/widget.js' async defer></script>
+
+    </div><!-- /.blog-main -->
+
+  </div><!-- /.row -->
+
+  <div class="row">
+    <div class="col-xl-12 blog-main">
+      <h3 class="pb-3 mb-4 font-italic border-bottom">
+        Latest Posts (No Longer in Use, See LinkedIn Posts)
+      </h3>
+      {% set postslist = collections.posts | head(-3) %}
+      {% set postslistCounter = postsCount %}
+      {% include "postslist.njk" %}
+
+    </div><!-- /.blog-main -->
+
+  </div><!-- /.row -->
+
+</main><!-- /.container -->
